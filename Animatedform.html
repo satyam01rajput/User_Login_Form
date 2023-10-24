@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Animated Form</title>
+   <link rel="stylesheet" href="formuser.css">
+
+    <!-- <style>
+        * {
+            margin: 0;
+            padding: 0;
+            background-image: url(Images/tree-832079_1920.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+
+        }
+
+        h2 {
+            text-align: center;
+            transform: translateY(30px);
+            text-shadow: 0px 0px 3px white;
+        }
+
+        .main {
+            width: 400px;
+            height: 500px;
+            box-shadow: 0px 0px 8px 4px black;
+            margin-left: 430px;
+            margin-top: 50px;
+
+
+        }
+
+
+
+        .first {
+            margin-left: 10px;
+
+
+        }
+
+
+        .f1 {
+            color: black;
+            font-weight: bold;
+
+        }
+
+        .f1-1 {
+            height: 20px;
+            width: 250px;
+            text-align: center;
+            border-radius: 20px;
+            border: 2px solid black;
+            color: black;
+
+        }
+
+        ::-webkit-input-placeholder {
+            color: rgb(0, 0, 0);
+        }
+
+
+        .second {
+            margin-left: 10px;
+            margin-top: 30px;
+        }
+
+        .s1 {
+            color: black;
+            font-weight: bold;
+        }
+
+        .s2 {
+            color: black;
+            font-weight: bold;
+
+
+
+        }
+
+        .s2-1 {
+            border: 1px solid black;
+            box-shadow: 0px 0px 1px 1px black;
+            border-radius: 15px;
+        }
+
+        .ss {
+            margin-left: 10px;
+            margin-top: 15px;
+        }
+
+        .ss div {
+            display: inline;
+            margin-left: 10px;
+            font-weight: bold;
+
+        }
+
+        .s2-2 {
+            border: 1px solid black;
+            border-radius: 10px;
+            box-shadow: 0px 0px 1px 1px black;
+        }
+
+        .third {
+            margin-top: 10px;
+            margin-left: 10px;
+            font-weight: bold;
+        }
+
+        select {
+            border-radius: 10px;
+            border: 1px solid balck;
+            box-shadow: 0px 0px 1px 1px black;
+        }
+
+        .fo1 {
+            height: 20px;
+            width: 100px;
+            border: 1px solid black;
+            border-radius: 8px;
+            box-shadow: 0px 0px 1px 1px black;
+            cursor: pointer;
+        }
+
+        .fo1:hover {
+
+            transform: scale(1.4);
+            transition: 2s;
+
+        }
+
+        .ema {
+            margin-top: 15px;
+            margin-left: 10px;
+            font-weight: bold;
+
+        }
+
+        .email {
+            border: 1px solid black;
+            border-radius: 10px;
+            box-shadow: 0px 0px 1px 1px black;
+        }
+
+        .pass {
+
+            margin-left: 10px;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        .password {
+            border: 1px solid black;
+            border-radius: 10px;
+            box-shadow: 0px 0px 1px 1px black;
+        }
+
+        .pass2 {
+            margin-left: 10px;
+            margin-top: 8px;
+            font-weight: bold;
+        }
+
+
+        .fourth{
+            margin-top: 50px;
+          
+            text-align: center;
+        }
+        .fifth{
+           margin-left: 160px;
+           margin-top: 18px;
+        }
+    </style> -->
+</head>
+
+<body>
+
+
+    <h2>Please Provide Your Basic Details</h2>
+
+  <form>
+    <div class="main">
+
+        <div class="first">
+            <div class="f1">Name :<br /><input class="f1-1" type="text" name="name" value="" required=""
+                    placeholder="Plesae Enter Your Full Name"></div>
+
+            <div class="f1"> Mother Name :<br /><input class="f1-1" type="text" name="name" value="" required=""
+                    placeholder="Plesae Enter Your  Mother Name"></div>
+
+            <div class="f1"> Father Name :<br /><input class="f1-1" type="text" name="name" value="" required=""
+                    placeholder="Plesae Enter Your Father Name"></div>
+        </div>
+
+        <div class="second">
+
+            <div class="s1"> Gender: - <input class="s1-1" type="radio" value="Female" name="Gender">Female <input
+                    type="radio" name="Gender" value="Male">Male </div>
+
+            <div class="ss">
+                <div> Age : -<input class="s2-2" type="number" min="10" max="18"></div>
+                <div class="s2">Date of Birth:-<input class="s2-1" type="date" value="" name="date of birth"></div>
+
+            </div>
+
+        </div>
+
+        <div class="third">
+            <div class="t1"> Chosse Your Course :
+                <select>
+                    <option>select the option</option>
+                    <option> BCA</option>
+                    <option> MCA</option>
+                    <option> BBA</option>
+                    <option> Bachelor of Science</option>
+                    <option> BCA</option>
+                </select>
+            </div>
+        </div>
+
+
+
+        <div class="ema"> Enter Your Mail id :<input class="email" type="email" name="email" value=""></div>
+
+        <div>
+            <div class="pass"> Password :<input class="password" type="text" name="password" value=""
+                    placeholder="Enter Password"> </div>
+            <div class="pass2"> Confirm password :<input class="password" type="password" name=" password" value=""
+                    placeholder="Confirm Password"></div>
+        </div>
+        
+        
+        <div class="fourth">
+
+            <div><i class="fa-regular fa-hand-point-right fa-beat fa-lg"></i> <input class="fo1" type="submit" value="Submit "></div>
+
+        </div>
+        
+        <div class="fifth">
+
+            <div> <input class="fo1" type="reset" value="Rseset" name="resest"><i class="fa-solid fa-hand-point-left fa-beat fa-lg"></i></div>
+
+        </div>
+        
+        
+
+
+    </div>
+
+</form>
+</body>
+
+</html>
